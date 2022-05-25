@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Set up Go
       uses: actions/setup-go@v3
@@ -20,7 +20,7 @@ jobs:
     - name: run daily new words
       run: cd ./server && go run ./cmd/ && cd ../
       
-    - uses: EndBug/add-and-commit@v7
+    - uses: EndBug/add-and-commit@v9
       with:
         message: 'add daily new words json'
         add: './assets/words/*'  
