@@ -1,0 +1,26 @@
+name: Go
+
+on:
+  schedule:
+    - cron:  '30 1 * * *'
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.18
+
+    - name: run daily new words
+      run: cd ./server && go run ./cmd/
+      
+    - uses: EndBug/add-and-commit@v9
+      with:
+        message: 'add daily new words json'
+        add: './assets/words/*'  
