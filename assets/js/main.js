@@ -4,7 +4,7 @@ window.onload=function(){
         console.log(data);
         var items = [];
         $.each( data, function( key, val ) {
-          items.push( "<li id='" + key + " class='list-group-item'>" + val.word +":"+ val.def + "</li>" );
+          items.push( "<li id='" + key + "' class='list-group-item'>" + val.word +":"+ val.def + "</li>" );
         });
        
         $( "<ul/>", {
