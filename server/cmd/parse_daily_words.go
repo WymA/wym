@@ -14,7 +14,7 @@ import (
 const EVERYDAY_WORDS_NUM = 10
 
 func getDailyFileName() string {
-	return "../assets/words/" + time.Now().Format("20120630") + ".json"
+	return "../assets/words/" + time.Now().AddDate(0, 0, 1).Format("20060102") + ".json"
 }
 
 func main() {
