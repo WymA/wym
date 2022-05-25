@@ -24,3 +24,4 @@ jobs:
       with:
         message: 'add daily new words json'
         add: './assets/words/*'  
+        token: ${{ secrets.GH_TOKEN }}
