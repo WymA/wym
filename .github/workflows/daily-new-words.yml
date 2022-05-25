@@ -1,4 +1,4 @@
-name: Go
+name: daily new words
 
 on:
   schedule:
@@ -24,4 +24,4 @@ jobs:
       with:
         message: 'add daily new words json'
         add: './assets/words/*'  
-        token: ${{ secrets.GH_TOKEN }}
+        push: false
