@@ -18,9 +18,9 @@ jobs:
         go-version: 1.18
 
     - name: run daily new words
-      run: cd ./server && go run ./cmd/
+      run: cd ./server && go run ./cmd/ && cd ../
       
-    - uses: EndBug/add-and-commit@v9
+    - uses: EndBug/add-and-commit@v7
       with:
         message: 'add daily new words json'
         add: './assets/words/*'  
