@@ -2,7 +2,7 @@ name: daily new words
 
 on:
   schedule:
-    - cron:  '30 20 * * *'
+    - cron:  '0 12 * * *'
   workflow_dispatch:
 
 jobs:
