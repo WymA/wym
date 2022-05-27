@@ -13,4 +13,4 @@ Everyday, this repository auto parse [Websters Disctionary](https://github.com/W
 
 ## Then...
 
-Folk if you like it.
+Star if you like it.
