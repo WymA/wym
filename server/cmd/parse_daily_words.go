@@ -11,7 +11,7 @@ import (
 	"github.com/WymA/wym/server/internal"
 )
 
-const EVERYDAY_WORDS_NUM = 10
+const EVERYDAY_WORDS_NUM = 12
 
 func getDailyFileName() string {
 	return "../assets/words/" + time.Now().AddDate(0, 0, 1).Format("20060102") + ".json"

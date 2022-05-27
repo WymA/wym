@@ -1,42 +1,50 @@
 [
- {
-  "word": "DATE",
-  "def": "The fruit of the date palm; also, the date palm itself."
- },
- {
-  "word": "DISGLORIFY",
-  "def": "To deprive of glory; to treat with indignity. [R.]Disglorified, blasphemed, and had in scorn. Milton."
- },
- {
-  "word": "TAMUL",
-  "def": "Tamil."
- },
- {
-  "word": "APPALL",
-  "def": "Terror; dismay. [Poet.] Cowper."
- },
- {
-  "word": "AMPHIBIA",
-  "def": "One of the classes of vertebrates."
- },
- {
-  "word": "FLITTING",
-  "def": "Contention; strife; scolding; specif., a kind of metricalcontest between two persons, popular in Scotland in the 16th century.[Obs. or Scot.]"
- },
- {
-  "word": "SCURVILY",
-  "def": "In a scurvy manner."
- },
- {
-  "word": "FENNEL",
-  "def": "A perennial plant of the genus Fæniculum (F.vulgare), havingvery finely divided leaves. It is cultivated in gardens for theagreeable aromatic flavor of its seeds.Smell of sweetest fennel. Milton.A sprig of fennel was in fact the theological smelling bottle of thetender sex. S. G. Goodrich.Azorean, or Sweet, fennel, (Fæniculum dulce). It is a smaller andstouter plant than the common fennel, and is used as a pot herb.-- Dog's fennel (Anthemis Cotula), a foul-smelling European weed; --called also mayweed.-- Fennel flower (Bot.), an herb (Nigella) of the Buttercup family,having leaves finely divided, like those of the fennel. N.Damascenais common in gardens. N.sativa furnishes the fennel seed, used as acondiment, etc., in India. These seeds are the \"fitches\" mentioned inIsaiah (xxviii. 25).-- Fennel water (Med.), the distilled water of fennel seed. It isstimulant and carminative.-- Giant fennel (Ferula communis), has stems full of pith, which, itis said, were used to carry fire, first, by Prometheus.-- Hog's fennel, a European plant (Peucedanum officinale) lookingsomething like fennel."
- },
- {
-  "word": "ADDUCT",
-  "def": "To draw towards a common center or a middle line. Huxley."
- },
- {
-  "word": "EQUATE",
-  "def": "To make equal; to reduce to an average; to make such anallowance or correction in as will reduce to a common standard ofcomparison; to reduce to mean time or motion; as, to equate payments;to equate lines of railroad for grades or curves; equated distances.Palgrave gives both scrolle and scrowe and equates both to F[rench]rolle. Skeat (Etymol. Dict. ).Equating for grades (Railroad Engin.), adding to the measureddistance one mile for each twenty feet of ascent.-- Equating for curves, adding half a mile for each 360 degrees ofcurvature."
- }
+    {
+        "word": "TINGID",
+        "def": "Of or pertaining to the genus Tingis."
+    },
+    {
+        "word": "EPHEMERAL",
+        "def": "Anything lasting but a day, or a brief time; an ephemeralplant, insect, etc."
+    },
+    {
+        "word": "POURPRESTURE",
+        "def": "See Purpresture."
+    },
+    {
+        "word": "SUPERADVENIENT",
+        "def": "Coming upon; coming in addition to, or in assistance of,something. [R.]He has done bravely by the superadvenient assistance of his God. Dr.H. More."
+    },
+    {
+        "word": "MONOPODIAL",
+        "def": "Having a monopodium or a single and continuous axis, as abirchen twig or a cornstalk."
+    },
+    {
+        "word": "HEARSELIKE",
+        "def": "Suitable to a funeral.If you listen to David's harp, you shall hear as many hearselike airsas carols. Bacon."
+    },
+    {
+        "word": "RECREMENTITIAL",
+        "def": "Of the nature of a recrement. See Recrement,2 (b).\"Recrementitial fluids.\" Dunglison."
+    },
+    {
+        "word": "PHOTOGRAMMETER",
+        "def": "A phototheodolite, or a camera designed for use inphotogrammetry. --Pho`to*gram*met\"ric (#), Pho`to*gram*met\"ric*al(#), a."
+    },
+    {
+        "word": "ISOLATED",
+        "def": "Placed or standing alone; detached; separated from others.Isolated point of a curve. (Geom.) See Acnode."
+    },
+    {
+        "word": "JANE-OF-APES",
+        "def": "A silly, pert girl; -- corresponding to jackanapes. Massinger."
+    },
+    {
+        "word": "ADDUCT",
+        "def": "To draw towards a common center or a middle line. Huxley."
+    },
+    {
+        "word": "EQUATE",
+        "def": "To make equal; to reduce to an average; to make such anallowance or correction in as will reduce to a common standard ofcomparison; to reduce to mean time or motion; as, to equate payments;to equate lines of railroad for grades or curves; equated distances.Palgrave gives both scrolle and scrowe and equates both to F[rench]rolle. Skeat (Etymol. Dict. ).Equating for grades (Railroad Engin.), adding to the measureddistance one mile for each twenty feet of ascent.-- Equating for curves, adding half a mile for each 360 degrees ofcurvature."
+    }
 ]
