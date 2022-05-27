@@ -4,12 +4,12 @@
 
 ## What?
 
-We can build our vocalbulary everyday via the [GithubPage]{https://matthias2wym.com} of this repository.
+We can build our vocalbulary everyday via the [GithubPage](https://matthias2wym.com) of this repository.
 It updates everyday at 12:00 UTC everyday.
 
 ## How?
 
-Everyday, this repository auto parse [Websters Disctionary]{https://github.com/WymA/wym/tree/master/assets/websters} into 12 new words to json and commit & push it.
+Everyday, this repository auto parse [Websters Disctionary](https://github.com/WymA/wym/tree/master/assets/websters) into 12 new words to json and commit & push it.
 
 ## Then...
 
