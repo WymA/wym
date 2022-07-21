@@ -13,10 +13,6 @@ import (
 
 const EVERYDAY_WORDS_NUM = 12
 
-func getDailyFileName() string {
-	return "../assets/words/" + time.Now().AddDate(0, 0, 1).Format("20060102") + ".json"
-}
-
 func main() {
 	dictionaryJson, err := os.Open("../assets/websters/dictionary.json")
 
@@ -51,6 +47,6 @@ func main() {
 
 	totaysJson, _ := json.MarshalIndent(todayWords, "", " ")
 
-	_ = ioutil.WriteFile(getDailyFileName(), totaysJson, 0644)
+	_ = ioutil.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
 
 }
