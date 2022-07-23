@@ -16,7 +16,7 @@ window.onload = function () {
                                             </div>
                                             <div class="card-back bg-white">
                                                 <div class="card-body">
-                                                    <h3 class="card-title">Definition</h3>
+                                                    <h3 class="card-title">`+ val.word + `</h3>
                                                     <p class="card-text">`+ val.def + `</p>
                                                 </div>
                                             </div>
