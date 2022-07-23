@@ -49,5 +49,5 @@ func main() {
 
 	_ = ioutil.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
 
-	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName())
+	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), "../public/")
 }

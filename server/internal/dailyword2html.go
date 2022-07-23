@@ -36,7 +36,7 @@ const DIV_NEW_WORD_ITEM_TEMPLATE = `
       </div>
 `
 
-func GenDailyWordHtmlFromJson(dailyNewWordJsonFilePath string) {
+func GenDailyWordHtmlFromJson(dailyNewWordJsonFilePath string, publicPath string) {
 	template, err := template.New("newWordItem").Parse(WORD_INDEX_HEADER + DIV_NEW_WORD_ITEM_TEMPLATE + WORD_INDEX_FOOTER)
 	CheckErr(err)
 
@@ -57,7 +57,7 @@ func GenDailyWordHtmlFromJson(dailyNewWordJsonFilePath string) {
 		Items:     todayWords,
 	}
 
-	indexHtml, err := os.Create(fmt.Sprintf("../../public/word-%s.html", GetTodaysDate()))
+	indexHtml, err := os.Create(fmt.Sprintf(publicPath+"word-%s.html", GetTodaysDate()))
 	CheckErr(err)
 
 	err = template.Execute(indexHtml, data)
