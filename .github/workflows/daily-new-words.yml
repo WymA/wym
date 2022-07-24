@@ -23,4 +23,4 @@ jobs:
     - uses: EndBug/add-and-commit@v9
       with:
         message: 'add daily new words json'
-        add: './assets/words/*'  
+        add: '.'  
