@@ -60,7 +60,7 @@ func GenDailyWordHtmlFromJson(dailyNewWordJsonFilePath string, publicPath string
 	wordHistoryHtml, err := os.Create(fmt.Sprintf(publicPath+"word-%s.html", GetTodaysDate()))
 	CheckErr(err)
 
-	indexHtml, err := os.Create(fmt.Sprintf(publicPath+"../index.html", GetTodaysDate()))
+	indexHtml, err := os.Create(fmt.Sprintf(publicPath + "../index.html"))
 	CheckErr(err)
 
 	err = template.Execute(wordHistoryHtml, data)
