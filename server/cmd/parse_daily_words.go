@@ -14,7 +14,7 @@ import (
 const EVERYDAY_WORDS_NUM = 12
 
 func main() {
-	dictionaryJson, err := os.Open("../public/assets/websters/dictionary.json")
+	dictionaryJson, err := os.Open("../assets/websters/dictionary.json")
 
 	if err != nil {
 		log.Fatalln(err)
@@ -49,5 +49,5 @@ func main() {
 
 	_ = ioutil.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
 
-	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), "../public/history/")
+	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), "../history/")
 }
