@@ -9,7 +9,7 @@ const WORD_INDEX_FOOTER string = `
 <div>
 <footer>
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-	TO MY DEAR WIFE PHYLLIS and to Toga my cat in the future.© 2022 Copyleft: matthias2wym
+	TO MY DEAR WIFE PHYLLIS and to Toga my cat.© 2024
   </div>
   <!-- Copyright -->
 </footer>
