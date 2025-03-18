@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"log"
 	"math/rand"
 	"os"
@@ -37,7 +36,7 @@ func main() {
 	todayWords := make([]internal.Word, 0)
 	totalWordsNum := len(words)
 
-	rand.Seed(time.Now().Unix())
+	rand.NewSource(time.Now().Unix())
 	for i := 0; i < EVERYDAY_WORDS_NUM; i++ {
 
 		pick := rand.Intn(totalWordsNum)
@@ -47,7 +46,8 @@ func main() {
 
 	totaysJson, _ := json.MarshalIndent(todayWords, "", " ")
 
-	_ = ioutil.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
+	_ = os.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
 
 	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), "../history/")
+	internal.CreateHistoryHtmlFile("../history/")
 }
