@@ -276,7 +276,7 @@ func CreateHistoryHtmlFile(historyPath string) {
 		Items: historyItems,
 	}
 
-	historyHtml, err := os.Create(historyPath + "../history.html")
+	historyHtml, err := os.Create(historyPath + "history.html")
 	CheckErr(err)
 
 	err = template.Execute(historyHtml, data)
