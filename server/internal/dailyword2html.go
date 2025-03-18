@@ -59,6 +59,9 @@ const WORD_INDEX_HEADER string = `
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/WymA">github</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://matthias2wym.com/history/history.html">History</a>
+          </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -149,6 +152,9 @@ const HISTORY_HEADER string = `
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/WymA">github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://matthias2wym.com/history/history.html">History</a>
           </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
