@@ -49,5 +49,5 @@ func main() {
 	_ = os.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
 
 	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), "../history/")
-	internal.CreateHistoryHtmlFile("../history/")
+	internal.CreateHistoryHtmlAndSitemap("../history/")
 }

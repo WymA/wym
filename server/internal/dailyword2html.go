@@ -168,16 +168,16 @@ const HISTORY_HEADER string = `
 `
 
 const DIV_ALL_HISTORY_ITEMS = `
-      <div class="starter-template">
-        <h1>History</h1>
-      </div>
-      <div class="container">
-        {{range .Items}}
-        <div id="{{.Index}}" class="col-sm-4">
-          <a href="https://matthias2wym.com/history/{{.Filename}}.html">{{.Date}}</a>
-        </div>
-        {{else}}{{end}}
-      </div>
+  <div class="starter-template">
+    <h1>History</h1>
+  </div>
+  <div class="container">
+    {{range .Items}}
+    <div id="{{.Index}}" class="col-sm-4">
+      <a href="` + BASE_HISTORY_URL + `{{.Filename}}.html">{{.Date}}</a>
+    </div>
+    {{else}}{{end}}
+  </div>
 `
 
 func GenDailyWordHtmlFromJson(dailyNewWordJsonFilePath string, historyPath string) {
@@ -253,7 +253,7 @@ func GetFilenameNoExt(filename string) string {
 	return filename
 }
 
-func CreateHistoryHtmlFile(historyPath string) {
+func CreateHistoryHtmlAndSitemap(historyPath string) {
 	template, err := template.New("allHistoryItems").Parse(HISTORY_HEADER + DIV_ALL_HISTORY_ITEMS + WORD_INDEX_FOOTER)
 	CheckErr(err)
 
@@ -287,4 +287,13 @@ func CreateHistoryHtmlFile(historyPath string) {
 
 	err = template.Execute(historyHtml, data)
 	CheckErr(err)
+
+	sitemap := GenerateSitemapFromHistory(historyItems)
+
+	sitemapFile, err := os.Create(historyPath + "sitemap.xml")
+	CheckErr(err)
+
+	err = sitemap.Generate(sitemapFile)
+	CheckErr(err)
+
 }

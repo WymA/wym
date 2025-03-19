@@ -23,3 +23,5 @@ const WORD_INDEX_FOOTER string = `
 </body>
 </html>
 `
+
+const BASE_HISTORY_URL = "https://matthias2wym.com/history/"
