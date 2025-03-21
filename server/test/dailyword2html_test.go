@@ -17,7 +17,7 @@ func TestGenDailyWordHtmlFromJson(t *testing.T) {
 		{
 			name: "path",
 			args: args{
-				dailyNewWordJsonFilePath: "../../assets/words/20220722.json",
+				dailyNewWordJsonFilePath: "../" + internal.PUBLIC_PATH + "assets/words/20220722.json",
 			},
 		},
 	}
