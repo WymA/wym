@@ -110,8 +110,8 @@ const HISTORY_HEADER string = `
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="vocabulary builder, 12 new words everyday">
-    <meta name="author" content="matthias2wym, wym, matthias, matthias.eth, WymA, vocabulary builder">
-    <link rel="icon" href="assets/img/favicon.ico">
+    <meta name="author" content="wym, matthias, WymA, vocabulary builder">
+    <link rel="icon" href="https://matthias2wym.com/assets/img/favicon.ico">
 
     <title>Wym's home | 12 new words everyday</title>
 
