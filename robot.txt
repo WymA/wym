@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://matthias2wym.com/history/sitemap.xml

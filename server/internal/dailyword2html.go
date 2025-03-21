@@ -172,11 +172,13 @@ const DIV_ALL_HISTORY_ITEMS = `
     <h1>History</h1>
   </div>
   <div class="container">
-    {{range .Items}}
-    <div id="{{.Index}}" class="col-sm-4">
-      <a href="` + BASE_HISTORY_URL + `{{.Filename}}.html">{{.Date}}</a>
+    <div class="row">
+      {{range .Items}}
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a href="` + BASE_HISTORY_URL + `{{.Filename}}.html" class="d-block p-3 border rounded text-center" style="font-size: 1.25rem; text-decoration: none;">{{.Date}}</a>
+      </div>
+      {{else}}{{end}}
     </div>
-    {{else}}{{end}}
   </div>
 `
 
