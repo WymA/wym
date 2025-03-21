@@ -25,3 +25,6 @@ const WORD_INDEX_FOOTER string = `
 `
 
 const BASE_HISTORY_URL = "https://matthias2wym.com/history/"
+
+const PUBLIC_PATH = "../public/"
+const HISTORY_PATH = "../public/history/"

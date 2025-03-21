@@ -1,6 +1,10 @@
-package internal
+package test
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/WymA/wym/server/internal"
+)
 
 func TestGenDailyWordHtmlFromJson(t *testing.T) {
 	type args struct {
@@ -19,7 +23,7 @@ func TestGenDailyWordHtmlFromJson(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			GenDailyWordHtmlFromJson(tt.args.dailyNewWordJsonFilePath, "../../public/")
+			internal.GenDailyWordHtmlFromJson(tt.args.dailyNewWordJsonFilePath, "../../public/")
 		})
 	}
 }
@@ -47,7 +51,7 @@ func TestGetDateFromFilename(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := GetDateFromFilename(tt.filename); got != tt.want {
+			if got := internal.GetDateFromFilename(tt.filename); got != tt.want {
 				t.Errorf("GetDateFromFilename() = %v, want %v", got, tt.want)
 			}
 		})
@@ -83,7 +87,7 @@ func TestGetFilenameNoExt(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := GetFilenameNoExt(tt.filename); got != tt.want {
+			if got := internal.GetFilenameNoExt(tt.filename); got != tt.want {
 				t.Errorf("GetFilenameNoExt() = %v, want %v", got, tt.want)
 			}
 		})

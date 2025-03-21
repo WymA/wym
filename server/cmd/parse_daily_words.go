@@ -13,7 +13,7 @@ import (
 const EVERYDAY_WORDS_NUM = 12
 
 func main() {
-	dictionaryJson, err := os.Open("../assets/websters/dictionary.json")
+	dictionaryJson, err := os.Open(internal.PUBLIC_PATH + "assets/websters/dictionary.json")
 
 	if err != nil {
 		log.Fatalln(err)
@@ -48,6 +48,6 @@ func main() {
 
 	_ = os.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
 
-	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), "../history/")
-	internal.CreateHistoryHtmlAndSitemap("../history/")
+	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), internal.HISTORY_PATH)
+	internal.CreateHistoryHtmlAndSitemap(internal.HISTORY_PATH)
 }
