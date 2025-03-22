@@ -11,7 +11,7 @@ func GetTodaysDate() string {
 }
 
 func GetDailyFileName() string {
-	return "../assets/words/" + GetTodaysDate() + ".json"
+	return PUBLIC_PATH + "assets/words/" + GetTodaysDate() + ".json"
 }
 
 type Word struct {
