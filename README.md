@@ -1,4 +1,4 @@
-# Wym's home | 12 New Words Everday
+# 12 New Words Everday
 
 [![daily new words](https://github.com/WymA/wym/actions/workflows/daily-new-words.yml/badge.svg)](https://github.com/WymA/wym/actions/workflows/daily-new-words.yml)
 
