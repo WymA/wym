@@ -23,7 +23,7 @@ func TestGenDailyWordHtmlFromJson(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			internal.GenDailyWordHtmlFromJson(tt.args.dailyNewWordJsonFilePath, "../../public/")
+			internal.GenDailyWordHtmlFromJson(tt.args.dailyNewWordJsonFilePath, "../"+internal.HISTORY_PATH)
 		})
 	}
 }
