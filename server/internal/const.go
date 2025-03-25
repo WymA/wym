@@ -185,7 +185,7 @@ const HISTORY_HEADER string = `
     <main role="main" class="container">
 `
 
-const DIV_ALL_HISTORY_ITEMS = `
+const DIV_ALL_HISTORY_ITEMS string = `
   <div class="starter-template">
     <h1>History</h1>
   </div>
@@ -200,7 +200,7 @@ const DIV_ALL_HISTORY_ITEMS = `
   </div>
 `
 
-const BASE_HISTORY_URL = "https://matthias2wym.com/history/"
+const BASE_HISTORY_URL string = "https://matthias2wym.com/history/"
 
-const PUBLIC_PATH = "../public/"
-const HISTORY_PATH = "../public/history/"
+const PUBLIC_PATH string = "../public/"
+const HISTORY_PATH string = "../public/history/"

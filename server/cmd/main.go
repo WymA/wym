@@ -48,6 +48,10 @@ func main() {
 
 	_ = os.WriteFile(internal.GetDailyFileName(), totaysJson, 0644)
 
+	currentDir, err := os.Getwd()
+	internal.CheckErr(err)
+	log.Println("Current working directory:", currentDir)
+
 	internal.GenDailyWordHtmlFromJson(internal.GetDailyFileName(), internal.HISTORY_PATH)
 	internal.CreateHistoryHtmlAndSitemap(internal.HISTORY_PATH)
 }
