@@ -35,7 +35,7 @@ func GenDailyWordHtmlFromJson(dailyNewWordJsonFilePath string, historyPath strin
 	wordHistoryHtml, err := os.Create(historyFile)
 	CheckErr(err)
 
-	indexFile := fmt.Sprintf(historyPath + "../index.html")
+	indexFile := fmt.Sprintf(PUBLIC_PATH + "index.html")
 	log.Println(indexFile)
 
 	indexHtml, err := os.Create(indexFile)
