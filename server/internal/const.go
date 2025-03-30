@@ -34,7 +34,7 @@ const WORD_INDEX_HEADER string = `
     <meta name="author" content="matthias2wym, wym, matthias, matthias.eth, WymA, vocabulary builder">
     <link rel="icon" href="assets/img/favicon.ico">
 
-    <title>Wym's home | 12 new words everyday</title>
+    <title>Wym's 12 new words everyday | {{range .Items}}{{.Word}} {{end}} </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 

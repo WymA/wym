@@ -16,9 +16,11 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.18
+    - name: test
+      run: cd ./server && go test ./test/ && cd ../
 
     - name: run daily new words
-      run: cd ./server && go test ./test/ && go run ./cmd/ && cd ../
+      run: cd ./server && go run ./cmd/ && cd ../
       
     - uses: EndBug/add-and-commit@v9
       with:
