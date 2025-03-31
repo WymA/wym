@@ -36,10 +36,10 @@ func main() {
 	todayWords := make([]internal.Word, 0)
 	totalWordsNum := len(words)
 
-	rand.NewSource(time.Now().Unix())
+	r := rand.New(rand.NewSource(time.Now().Unix()))
 	for i := 0; i < EVERYDAY_WORDS_NUM; i++ {
 
-		pick := rand.Intn(totalWordsNum)
+		pick := r.Intn(totalWordsNum)
 		log.Printf("Word: %+v", words[pick])
 		todayWords = append(todayWords, words[pick])
 	}
